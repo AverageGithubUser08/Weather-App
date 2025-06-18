@@ -14,4 +14,11 @@ class ExampleUnitTest {
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
     }
+
+
+    @Test
+    fun testWeatherData() {
+        var temp = WeatherData();
+        assertEquals(0.0, temp.getTemperature(), 0.0);
+    }
 }
