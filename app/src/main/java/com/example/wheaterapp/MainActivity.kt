@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
             WheaterAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "Android",
+                        name = "Tobias",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -36,12 +36,4 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         text = "Hello $name!",
         modifier = modifier
     )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    WheaterAppTheme {
-        Greeting("Android")
-    }
 }
