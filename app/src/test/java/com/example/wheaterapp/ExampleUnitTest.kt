@@ -18,7 +18,7 @@ class ExampleUnitTest {
 
     @Test
     fun testWeatherData() {
-        var temp = WeatherData();
-        assertEquals(0.0, temp.getTemperature(), 0.0);
+        var temp = WeatherData()
+        assertEquals(0.0, temp.getTemperature(), 0.0)
     }
 }

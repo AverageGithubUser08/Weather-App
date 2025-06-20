@@ -1,5 +1,14 @@
 package com.example.wheaterapp
 
+import kotlinx.serialization.Serializable
+import io.ktor.client.call.*
+import io.ktor.client.request.*
+
+suspend fun getWeatherData(): WeatherData {
+    return KtorClient.client.get("http://192.168.178.50").body()
+}
+
+@Serializable
 class WeatherData {
     // Temperature in Degree Celsius
     private var temperature = 0.0
@@ -7,4 +16,6 @@ class WeatherData {
     public fun getTemperature(): Double {
         return temperature;
     }
+
+
 }
