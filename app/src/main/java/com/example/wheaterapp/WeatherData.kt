@@ -5,7 +5,7 @@ import io.ktor.client.call.*
 import io.ktor.client.request.*
 
 suspend fun getWeatherData(): WeatherData {
-    return KtorClient.client.get("http://192.168.178.50").body()
+    return KtorClient.client.get("http://0.0.0.0/getWeatherData").body()
 }
 
 @Serializable
